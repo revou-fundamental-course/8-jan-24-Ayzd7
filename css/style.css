@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;800&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.fContainer{
+    align-items: center;
+    text-align: center;
+    height: 15vh;
+}
+
+.wrapper {
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+    width: 100%;
+    height: 80px;
+    background-color: #0398f4;
+}
+
+.brand {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 15px;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+}
+
+.firstname {
+    color: lightgrey;
+    font-weight: 700;
+}
+
+.lastname {
+    color: lightgrey;
+    padding-left: 4px;
+}
+header {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    /* padding: 20px; Atur sesuai kebutuhan Anda */
+}
+
+h1, h4, h5 {
+    margin: 1;
+    color: black;
+
+}
+
+button{
+    background-color: white;
+    text-align: center;
+    text-transform: capitalize;
+    color: #0398f4;
+    width: 100%;
+    padding: 10px;
+}
+
+nav p {
+    text-align: center;
+}
+
+section {
+    display: flex;
+    justify-content: center;  /*shorthand for align-items: center; justify-content: center;*/ 
+    text-align : center;  /*optional: to center-align text within the section */
+}
+
+section img {
+    width: 40%;
+}
+
+section h2 {
+    margin: auto;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.headerbtn {
+    display: flex;
+    background-color:#0398f4 ;
+    width: 100%;
+    height: 70px;
+}
+
+.rmsluaspersegi {
+    padding: 20px;
+    text-align: left;
+}
+
+.input {
+    padding: 0 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+input {
+    padding-left: 15px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.btnats {
+    background-color: white;
+    text-align: center;
+    text-transform: capitalize;
+    color: #0398f4;
+    border: none;
+    width: 100%;
+    padding: 10px;
+}
+
+.btnbwh {
+    margin: 10px 0;
+    width: 60px;
+    background-color: #0398f4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.btnreset {
+    text-align: end;
+    margin-top: 50px;
+    color: white;
+    background-color: orange;
+    width: 60px;
+    border: none;
+    border-radius: 4px;
+}
+
+.hitung {
+    height: 10px;
+}
+
+.reset {
+    padding-right: 20px;
+    text-align: end;
+}
+.tengah {
+    text-align: center;
+}
