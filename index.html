@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <script src="abu.js" defer></script>
-    <title>katik (kalkulatorketik)</title>
+    <script src="js/script.js" defer></script>
+    <title>Ayzd KATI</title>
 </head>
+
 <body>
     <div class="fContainer">
         <nav class="wrapper">
@@ -24,8 +26,10 @@
 
     <nav>
         <p>
-            <button class="btnats" id="btnPersegi">persegi</button>
-            <button class="btnats" id="btnPersegiPanjang">persegi panjang</button>
+        <div>
+            <button class="btnats" id="btnPersegi">luas persegi</button>
+            <button class="btnats" id="btnPersegiPanjang">keliling persegi</button>
+        </div>
         </p>
     </nav>
 
@@ -33,55 +37,64 @@
         <div class="headerbtn">
             <h2>Luas Persegi</h2>
         </div>
-        <img src="https://id-static.z-dn.net/files/d56/a76570ddbdc7567010d1444fc788f745.jpg"aalt="gambar persegi">
+        <img src="https://katik.azurewebsites.net/images/persegi.jpg" alt="gambar persegi">
         <div>
             <p class="rmsluaspersegi">Rumus Luas Persegi Yaitu : </p>
-        <div class="rmsluaspersegi">
-            <p class="tengah">L = S X S</p>
-            <p>Di mana :</p>
-            <p>L = Luas</p>
-            <p>S = Sisi</p>
-        </div>
-        <hr>
-        <div class="input">
-            <label for="sisi">Hitung Luas Persegi</label>
-            <input placeholder="Nilai Sisi" type="number" id="sisi" />
-        </div>
-        <div class="hitung">
-            <button class="btnbwh" onclick="hitungLuasPersegi()">Hitung</button>
-        </div>
-        <div class="reset">
-            <button class="btnreset" onclick="resetForm('formPersegi')">Reset</button>
-        </div>
-        <!-- <button onclick="hitungKelilingPersegi()">Hitung Keliling</button> -->
-        <p id="hasilPersegi"></p>
+            <div class="rmsluaspersegi">
+                <p class="tengah">L = S X S</p>
+                <p>Di mana :</p>
+                <p>L = Luas</p>
+                <p>S = Sisi</p>
+            </div>
+            <hr>
+            <div class="input">
+                <label for="sisi">Hitung Luas Persegi</label>
+                <input placeholder="Nilai Sisi" type="number" id="sisi" />
+            </div>
+            <div class="hasilluas">
+                <p id="rmsluaspersegi"></p>
+                <p id="luaspersegi"></p>
+                <p id="hasilPersegi"></p>
+            </div>
+            <div class="hitung">
+                <button class="btnbwh" onclick="hitungLuasPersegi()">Hitung</button>
+            </div>
+            <div class="reset">
+                <button class="btnreset" onclick="resetForm('formPersegi')">Reset</button>
+            </div>
+            <!-- <button onclick="hitungKelilingPersegi()">Hitung Keliling</button> -->
     </section>
 
     <section id="formPersegiPanjang" style="display: none;">
         <div class="headerbtn">
-            <h2>Keliling Persegi Panjang</h2>
+            <h2>Keliling Persegi</h2>
         </div>
-        <img src="https://www.doyanblog.com/wp-content/uploads/2021/12/gambar-persegi-panjang.jpg"aalt="gambar persegi">
+        <img src="https://katik.azurewebsites.net/images/persegi.jpg" aalt="gambar persegi">
         <div>
             <p class="rmsluaspersegi">Rumus Luas Persegi Yaitu : </p>
-        <div class="rmsluaspersegi">
-            <p class="tengah">K = 4 X S</p>
-            <p>Di mana :</p>
-            <p>K = Keliling</p>
-            <p>S = Sisi</p>
-        </div>
-        <hr>
-        <div class="input">
-            <label for="sisipersegipanjang">Hitung Keliling Persegi</label>
-            <input placeholder="Nilai Sisi" type="number" id="sisipersegipanjang" />
-        </div>
-        <p id="hasilPersegiPanjang"></p>
-        <div class="hitung">
-            <button class="btnbwh" onclick="hitungLuasPersegiPanjang()">Hitung</button>
-        </div>
-        <div class="reset">
-            <button class="btnreset" onclick="resetForm('formPersegiPanjang')">Reset</button>
-        </div>
+            <div class="rmsluaspersegi">
+                <p class="tengah">K = 4 X S</p>
+                <p>Di mana :</p>
+                <p>K = Keliling</p>
+                <p>S = Sisi</p>
+            </div>
+            <hr>
+            <div class="input">
+                <label for="sisipersegipanjang">Hitung Keliling Persegi</label>
+                <input placeholder="Nilai Sisi" type="number" id="sisipersegipanjang" />
+            </div>
+            <div class="hasilkeliling">
+                <p id="rmskeliling"></p>
+                <p id="kelilingpersegi"></p>
+                <p id="hasilPersegiPanjang"></p>
+            </div>
+            <div class="hitung">
+                <button class="btnbwh" onclick="hitungLuasPersegiPanjang()">Hitung</button>
+            </div>
+            <div class="reset">
+                <button class="btnreset" onclick="resetForm('formPersegiPanjang')">Reset</button>
+            </div>
     </section>
 </body>
+
 </html>
