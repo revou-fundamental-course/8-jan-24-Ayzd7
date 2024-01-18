@@ -11,7 +11,7 @@ document.getElementById("btnPersegi").addEventListener("click", function () {
 
 document.getElementById("btnPersegiPanjang").addEventListener("click", function () {
     document.getElementById("formPersegi").style.display = "none";
-    document.getElementById("formPersegiPanjang").style.display = "block";
+    document.getElementById("formPersegiPanjang").style.display = "block"
 });
 
 function hitungLuasPersegi() {
